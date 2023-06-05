@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Финансы - «ОВК»</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="background-color: rgb(230, 227, 227);">
+  <header>
+    <div class="menu">
+      <!-- Div Header-->
+      <h2>Разделы сайта</h2>
+
+      <!-- Links in Div -->
+      <a href="index.html">
+            О компании
+        </a>
+      <a href="financials.html" class="active">
+            Финансовые показатели
+        </a>
+      <a href="contact.html">
+            Контактная информация
+        </a>
+      <a href="video.html">
+            Видео
+        </a>
+    </div>
+  </header>
+
+  <main>
+
+    <div>
+      <div style=" margin-top: 20px;">
+        <img style="width: 80%; height: 315px; border-radius: 10px;" src="https://cdnn21.img.ria.ru/images/07e5/08/13/1746434486_0:160:3072:1888_1920x0_80_0_0_2c21f1dc5b8141124f35807f45c4765a.jpg" alt="">
+        <h1 style="margin-top: -275px; margin-left: 50px; font-size: 48px; color: white;">Финансы</h1>
+      </div>
+    </div>
+
+    <div style="display: block; margin-top: 220px;">
+      <div>
+        <div style="color: rgb(184, 9, 9); position: absolute;">
+          <h1>Ключевые данные</h1>
+        </div>
+        <div style="position: absolute; margin-top: 60px; color: gray; line-height: 1.5;">
+          Код ценной бумаги
+          <br> Идентификатор режима торгов
+          <br> Режим торгов
+        </div>
+        <div style="position: absolute; margin-left: 300px; margin-top: 60px; text-align: right; line-height: 1.5;">
+          <b>UWGN</b>
+          <br>
+          <b>-</b>
+          <br>
+          <b>-</b>
+        </div>
+
+        <div style="position: absolute; margin-left: 500px; padding-top: 60px; color: gray; line-height: 1.5;">
+          ISIN код
+          <br> Уровень листинга
+          <br> Лотность
+        </div>
+
+        <div style="position: absolute; margin-left: 700px; padding-top: 60px; text-align: right; line-height: 1.5;">
+          <b>RU000A0JVBT9</b>
+          <br>
+          <b>3</b>
+          <br>
+          <b>-</b>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="block_so_znacheniyami">
+        <div style="margin-left: 50px;">
+          <div class="znachenie" style="width: 170px;">
+            <h2>17.1 млрд руб.</h2>
+          </div>
+          <div class="znachenie" style="margin-left: 40px;">
+            <h2>115 996 689</h2>
+          </div>
+          <div class="znachenie" style="margin-left: 30px;">
+            <h2 id="maxPrice"></h2>
+          </div>
+          <div class="znachenie" style=" margin-left: 30px;">
+            <h2 id="minPrice"></h2>
+          </div>
+          <div class="znachenie" style="margin-left: 30px;">
+            <h2 id="stdDev"></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="block_s_opisaniem">
+        <div style="margin-left: 50px;">
+          <div class="opisanie">
+            <p>капитализация на конец апреля</p>
+          </div>
+          <div class="opisanie" style="margin-left: 50px;">
+            <p>общее число акций компании</p>
+          </div>
+          <div class="opisanie" style="margin-left: 40px;">
+            <p>максимальная цена закрытия</p>
+          </div>
+          <div class="opisanie" style="margin-left: 30px;">
+            <p>минимальная цена закрытия</p>
+          </div>
+          <div class="opisanie" style="margin-left: 30px;">
+            <p>среднеквадратическое отклонение цены</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="color: rgb(184, 9, 9); margin-top: 50px;">
+      <h1>Цены закрытия сделок за последний месяц торгов: (ноябрь-декабрь 2021)</h1>
+    </div>
+
+    <div style="display: block; justify-content: center; margin-top: 10px; margin-bottom: 50px;">
+      <table id="table" class="finashka" style="border: 1; text-align: center; width: 80%; font-family: Arial, Helvetica, sans-serif; margin-top: 10px;">
+        <tr>
+          <th style="background-color: lightgray; text-align: center;">Дата</th>
+          <th style="background-color: lightgray; text-align: center;">Значение</th>
+        </tr>
+        <tr>
+          <td>09.12.2021</td>
+          <td>75</td>
+        </tr>
+        <tr>
+          <td>08.12.2021</td>
+          <td>76.8</td>
+        </tr>
+        <tr>
+          <td>07.12.2021</td>
+          <td>80.2</td>
+        </tr>
+        <tr>
+          <td>06.12.2021</td>
+          <td>80.3</td>
+        </tr>
+        <tr>
+          <td>03.12.2021</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>02.12.2021</td>
+          <td>81.2</td>
+        </tr>
+        <tr>
+          <td>01.12.2021</td>
+          <td>78.5</td>
+        </tr>
+        <tr>
+          <td>30.11.2021</td>
+          <td>77.5</td>
+        </tr>
+        <tr>
+          <td>29.11.2021</td>
+          <td>81.3</td>
+        </tr>
+        <tr>
+          <td>27.11.2021</td>
+          <td>81.5</td>
+        </tr>
+        <tr>
+          <td>26.11.2021</td>
+          <td>92.1</td>
+        </tr>
+        <tr>
+          <td>25.11.2021</td>
+          <td>99.1</td>
+        </tr>
+        <tr>
+          <td>24.11.2021</td>
+          <td>99.1</td>
+        </tr>
+        <tr>
+          <td>23.11.2021</td>
+          <td>96.1</td>
+        </tr>
+        <tr>
+          <td>22.11.2021</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>19.11.2021</td>
+          <td>101.4</td>
+        </tr>
+        <tr>
+          <td>18.11.2021</td>
+          <td>103</td>
+        </tr>
+        <tr>
+          <td>17.11.2021</td>
+          <td>106.3</td>
+        </tr>
+        <tr>
+          <td>16.11.2021</td>
+          <td>104.7</td>
+        </tr>
+        <tr>
+          <td>15.11.2021</td>
+          <td>104</td>
+        </tr>
+        <tr>
+          <td>12.11.2021</td>
+          <td>102.5</td>
+        </tr>
+        <tr>
+          <td>11.11.2021</td>
+          <td>102.4</td>
+        </tr>
+        <tr>
+          <td>10.11.2021</td>
+          <td>104.2</td>
+        </tr>
+        <tr>
+          <td>09.11.2021</td>
+          <td>105.7</td>
+        </tr>
+      </table>
+    </div>
+</body>
+</main>
+
+<footer style="width: 90%; background-color: white; height: 120px; z-index: 2;">
+  <div style="margin-left: 50px; margin-top: 20px;">
+    <div>
+      &copy; 2012-2023 ПАО «НПК ОВК»
+    </div>
+    <div>
+      <a href="https://www.uniwagon.com/main/legal_information/">Правовая информация</a>
+    </div>
+    <div>
+      <a href="https://www.uniwagon.com/main/confidentiality-policy/">Уведомление о конфиденциальности</a>
+    </div>
+  </div>
+
+  <div style="margin-left: 1050px; margin-top: -60px;">
+    <div class="soc_seti" style="display: inline-block;">
+      <a target="_blank" href="https://www.youtube.com/user/UnitedWagonCompany/"><img src="https://sun9-18.userapi.com/impg/CzYARw_nRiCXBmk4nmx2nxknN6PggqJfbNS6FA/1-PBKuSVDaI.jpg?size=570x556&quality=95&sign=e6035f53c2f081f3ccd7c431e4d4eec0&c_uniq_tag=l-MUYWwp6fjP00E8cpZFfNm8ihLmLA-g_MyyRio_p9w&type=album" alt=""></a>
+    </div>
+    <div class="soc_seti" style="display: inline-block; margin-left: 20px;">
+      <a target="_blank" href="https://vk.com/wall-455371_430282"><img src="https://sun9-8.userapi.com/impg/o11Gx7QQgzAepakDyQYFs-MYaVuGvZsXL3mitw/7SxdWLjH_Ws.jpg?size=1080x1080&quality=96&sign=ff41afef276750094e15731df3f60f58&type=album" alt=""></a>
+    </div>
+    <div class="soc_seti" style="display: inline-block; margin-left: 20px;">
+      <a target="_blank" href="https://t.me/uniwagon"><img src="https://sun9-57.userapi.com/impg/TvR6iSuNLv3-h2-g9Zs0UorBGLAyLb00PqQl0Q/ZLlMVqMJvA0.jpg?size=1164x1173&quality=95&sign=26f7bb82bbba693c1e6b923e0c9477b5&c_uniq_tag=rCaxVjKQRjB1COOoYO0VMxSs1ypKly-FRg3clpamCDk&type=album" alt=""></a>
+    </div>
+    <div class="soc_seti" style="display: inline-block; margin-left: 20px;">
+      <a target="_blank" href="https://twitter.com/Uniwagon"><img src="https://sun9-26.userapi.com/impg/mUBTzjk291fVKR6WGiFTN42T0QK3TQP8JO1n0Q/ykxsIMxZnm0.jpg?size=2491x2049&quality=96&sign=0aab6d2dc119a08b8f81ebab1ea39b28&type=album" alt=""></a>
+    </div>
+  </div>
+</footer>
+</html>
+
+<script>
+  // Шаг 1: Получить ссылку на таблицу
+  var table = document.getElementById('table'); // Замените 'your-table-id' на ID вашей таблицы
+  // Шаг 2: Найти все ячейки второго столбца
+  var cells = table.querySelectorAll('td:nth-child(2)'); // Здесь используется селектор :nth-child для выбора второго столбца
+  // Шаг 3: Найти максимальное и минимальное число
+  var maxNumber = null;
+  var minNumber = null;
+  var sum = 0; // Сумма значений
+  var count = 0; // Количество значений
+  for (var i = 0; i < cells.length; i++) {
+    var cellValue = parseFloat(cells[i].textContent.replace(',', '.')); // Заменяем запятую на точку и интерпретируем значение ячейки как десятичное число
+    if (isNaN(cellValue)) {
+      continue; // Пропустить, если значение не является числом
+    }
+    if (maxNumber === null || cellValue > maxNumber) {
+      maxNumber = cellValue;
+    }
+    if (minNumber === null || cellValue < minNumber) {
+      minNumber = cellValue;
+    }
+    sum += cellValue; // Добавляем значение к сумме
+    count++; // Увеличиваем количество значений
+  }
+  var average = sum / count; // Среднее значение
+  var sumOfSquaredDifferences = 0; // Сумма квадратов разностей
+  for (var i = 0; i < cells.length; i++) {
+    var cellValue = parseFloat(cells[i].textContent.replace(',', '.'));
+    if (isNaN(cellValue)) {
+      continue;
+    }
+    var difference = cellValue - average;
+    var squaredDifference = difference * difference;
+    sumOfSquaredDifferences += squaredDifference;
+  }
+  var standardDeviation = Math.sqrt(sumOfSquaredDifferences / count); // Стандартное отклонение
+  document.getElementById('maxPrice').textContent = maxNumber;
+  document.getElementById('minPrice').textContent = minNumber;
+  document.getElementById('stdDev').textContent = standardDeviation.toFixed(2);
+</script>
